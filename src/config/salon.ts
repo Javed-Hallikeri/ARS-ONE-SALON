@@ -134,6 +134,7 @@ export const SALON_SERVICES: ServiceCategory[] = [
       "Deep conditioning & repair masks",
       "Texture-specific care plans",
     ],
+    image: "/images/salon/hair-treatment-steamer.jpg",
     iconName: "Sparkles",
   },
   {
@@ -161,6 +162,7 @@ export const SALON_SERVICES: ServiceCategory[] = [
       "Pre-event grooming preparation",
       "Coordinated styling appointments",
     ],
+    image: "/images/salon/twin-daylight-stations.jpg",
     iconName: "Crown",
   },
   {
@@ -188,6 +190,7 @@ export const SALON_SERVICES: ServiceCategory[] = [
       "Personal care essentials",
       "Hygienic single-use standards",
     ],
+    image: "/images/salon/beauty-treatment-suite.jpg",
     iconName: "Star",
   },
   {
@@ -215,6 +218,7 @@ export const SALON_SERVICES: ServiceCategory[] = [
       "Relaxed styling experience",
       "Attentive, unhurried service",
     ],
+    image: "/images/salon/waiting-lounge-display.webp",
     iconName: "HeartHandshake",
   },
 ];
@@ -298,6 +302,30 @@ export const SALON_GALLERY: GalleryImage[] = [
     alt: "Interior view connecting styling stations to the hair wash and spa area",
     caption: "Seamless Flow from Styling to Wash Lounge",
     category: "Spa & Care",
+    aspect: "portrait",
+  },
+  {
+    id: "hair-treatment-steamer",
+    src: "/images/salon/hair-treatment-steamer.jpg",
+    alt: "Hair treatment steamer and private care room with marble walls at ARS ONE",
+    caption: "Hair Treatment & Steamer Suite",
+    category: "Spa & Care",
+    aspect: "portrait",
+  },
+  {
+    id: "beauty-treatment-suite",
+    src: "/images/salon/beauty-treatment-suite.jpg",
+    alt: "Private beauty and personal care suite with treatment bed and vanity sink",
+    caption: "Private Beauty & Grooming Suite",
+    category: "Private Suites",
+    aspect: "portrait",
+  },
+  {
+    id: "twin-daylight-stations",
+    src: "/images/salon/twin-daylight-stations.jpg",
+    alt: "Twin styling stations with oval LED mirrors and L'Oréal Professionnel trolley",
+    caption: "Front Styling Stations & Color Trolley",
+    category: "Styling Floor",
     aspect: "portrait",
   },
 ];
