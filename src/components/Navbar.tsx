@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { SALON_CONFIG } from "@/config/salon";
@@ -51,8 +52,15 @@ export default function Navbar() {
             className="group flex items-center gap-3.5 focus:outline-none"
             aria-label={SALON_CONFIG.brand.name}
           >
-            <span className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/60 bg-pure text-obsidian font-serif text-xl font-semibold tracking-tight transition-transform duration-300 group-hover:scale-105">
-              {SALON_CONFIG.brand.monogram}
+            <span className="relative h-10 w-10 overflow-hidden rounded-full">
+              <Image
+                src="/images/salon/logo-monogram.png"
+                alt="ARS ONE monogram"
+                fill
+                sizes="40px"
+                className="object-cover"
+                priority
+              />
             </span>
             <div className="flex flex-col">
               <span className="font-serif text-xl font-semibold tracking-[0.18em] text-pure leading-none">

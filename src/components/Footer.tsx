@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { SALON_CONFIG } from "@/config/salon";
 
 export default function Footer() {
@@ -5,9 +6,15 @@ export default function Footer() {
     <footer className="border-t border-pure/10 bg-obsidian py-14 text-ivory">
       <div className="mx-auto flex max-w-7xl flex-col justify-between gap-8 px-6 sm:flex-row sm:items-center lg:px-10">
         <div className="flex items-center gap-3.5">
-          <span className="flex h-10 w-10 items-center justify-center rounded-full border border-gold/60 bg-pure font-serif text-xl font-semibold text-obsidian">
-            {SALON_CONFIG.brand.monogram}
-          </span>
+          <span className="relative h-10 w-10 overflow-hidden rounded-full">
+              <Image
+                src="/images/salon/logo-monogram.png"
+                alt="ARS ONE monogram"
+                fill
+                sizes="40px"
+                className="object-cover"
+              />
+            </span>
           <div>
             <p className="font-serif text-lg tracking-[0.18em] text-pure">
               {SALON_CONFIG.brand.shortName}
