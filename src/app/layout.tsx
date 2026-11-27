@@ -4,6 +4,10 @@ import { SALON_CONFIG } from "@/config/salon";
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://arsonesalon.com"),
+  icons: {
+    icon: "/favicon.png",
+    apple: "/apple-icon.png",
+  },
   title: {
     default: "ARS ONE Professional Unisex Salon | Sangli — Hair, Beauty & Grooming",
     template: "%s | ARS ONE Professional Unisex Salon Sangli",
